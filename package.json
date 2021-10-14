@@ -1,0 +1,24 @@
+{
+  "name": "TensorflowJS demo with model trained in Lobe",
+  "main": "src/script.js",
+  "targets": {
+    "default": {
+      "distDir": "dist"
+    }
+  },
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development parcel src/index.html",
+    "build": "cross-env NODE_ENV=production parcel build index.html  --no-minify --public-url ./"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^7.0.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.9.0"
+  }
+}

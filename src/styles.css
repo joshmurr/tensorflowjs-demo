@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#container {
+  margin: auto;
+  width: 30vw;
+  padding-top: 20vh;
+  margin-bottom: 1em;
+}
+
+canvas {
+  display: none;
+}
+
+video {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background-color: lightgrey;
+  border: none;
+  font-size: 2em;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.hide {
+  display: none;
+}
+
+#emoji {
+  position: absolute;
+  top: 17vh;
+  font-size: 10em;
+}
+
+.left {
+  left: 30vw;
+  transform: rotate(340deg);
+}
+
+.right {
+  left: 60vw;
+  transform: rotate(20deg);
+}
+
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#status {
+  display: none;
+}
