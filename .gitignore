@@ -1,5 +1,9 @@
 .cache/
 node_modules/
 package-lock.json
-dist/
+dist/hand_face_model/
+dist/*.js
+dist/*.map
+dist/*.html
+dist/*.css
 tm-my-image-model.zip
