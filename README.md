@@ -2,7 +2,7 @@
 
 ![Image of thing in use](./pic.png)
 
-This is a fairly consice demo to show how you would add a model you have trained with [Teachable Machine](https://teachablemachine.withgoogle.com/) or [Lobe](https://lobe.ai/).
+This is a fairly consice demo to show how you would use a model you have trained with [Teachable Machine](https://teachablemachine.withgoogle.com/) or [Lobe](https://lobe.ai/) in a web page.
 
 There isn't a huge amount of code, but the code itself is naturally quite specific to the [TensorflowJS API](https://js.tensorflow.org/api/latest/) so it might seem a bit weird. I've based this demo off the [MobileNet demo](https://github.com/tensorflow/tfjs-examples/tree/master/mobilenet) provided by the TensorflowJS team, and also the `tfjsExample.ts` script which you will find in the directory when you download the model from Lobe. But the latter just had a handy way of center cropping the input image, the __MobileNet__ demo is the important one. Why? The model you have trained using Teachable Machine or Lobe is a classification model, probably very similar to [MobileNet](https://arxiv.org/pdf/1704.04861.pdf). All we have done is restructure the last layer of the model to be more specific to the classes _you have defined_. 
 
