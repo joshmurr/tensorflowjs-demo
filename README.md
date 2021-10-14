@@ -27,3 +27,17 @@ While __Teachable Machine__ exports their models as a __Layers Model__ which you
 myModel = await tf.loadLayersModel(MODEL_PATH);
 ```
 
+I've included my _Hand_Face_Model_ in the `/dist` directory.
+
+---
+
+## To Run
+
+```bash
+git clone https://github.com/joshmurr/tensorflowjs-demo
+cd tensorflowjs-demo
+npm install
+npm run watch
+```
+
+The final command will use [Parcel](https://parceljs.org/) to bundle the project and run a development server on `http://localhost:1234/`. This is important as we are using newer Javascript syntax (`import` statments and such) which are not natively supported by browsers yet, and so need to be transpiled (effectively translated into more old fashioned JS) before the website can be used. We also need to run a server to help overcome [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) problems... Parcel _should_ hotload and do all the useful things, but I just find it crashes pretty much all the time. So I think this will be the last time I use Parcel.
